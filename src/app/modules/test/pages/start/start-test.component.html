@@ -1,0 +1,57 @@
+<div class="content-wrapper">
+    <div class="container-fluid">
+    </div>
+
+    <div class="login-page">
+        <div class="container login-container">
+            <div class="row">
+                <div class="col-md-12" id="form">
+
+                    <div *ngIf="!isActiveTest" class="instruction container  start-test-container" style="border: none;">
+                        <br>
+                        <p><i class="fa fa-fw fa-check"></i></p>
+                        <p>You have completed the test assigned to you. Please contact your admin for result.
+                            SmartChamps wishes you all the best!!</p>
+                    </div>
+
+
+                    <div *ngIf="isActiveTest" class="container  start-test-container instruction">
+                        <p style="color: #276897; font-size: 20px; "><b>Assessment Instructions</b></p>
+                        <div class="row desc no-gutters">
+                            <p *ngIf="template">
+                                {{template.instruction}}
+                            </p>
+                        </div>
+                        <div class="row attributes no-gutters">
+                            <div class="col-1"></div>
+
+                            <div class="col-3 attribute">
+                                <div class="attribute-icon icon icon-timer"></div>
+                                <div class="attribute-value"><label *ngIf="template">{{template.time}} Min</label></div>
+                                <div class="attribute-desc">Time Limit</div>
+                            </div>
+                            <div class="col-4 attribute">
+                                <div class="attribute-icon icon icon-question"></div>
+                                <div class="attribute-value"><label *ngIf="template">{{template.totalQuestions}}</label></div>
+                                <div class="attribute-desc">No. Of Questions</div>
+                            </div>
+                            <div class="col-4 attribute">
+                                <div class="attribute-icon icon icon-plus"></div>
+                                <div class="attribute-value"><label>1</label></div>
+                                <div class="attribute-desc">No. Of Attempts</div>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row actions no-gutters text-center">
+                            <div class="col-4"></div>
+                            <button class="btn btn-green col-4" (click)="startTest()"> Start Test</button>
+                            <div class="col-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,46 @@
+<div class="container-fluid test-body">
+    <div class="row">
+        <div class="col-md-4 test-info">
+            <div class="row test-info-header no-gutters">
+                <div class="col-8 username">
+                    {{username}}
+                </div>
+                <div class="col-4 time">
+                    <app-timer *ngIf="data" [time]="data.time" (end)="submitTest($event)"></app-timer>
+                </div>
+            </div>
+            <div class="row legends no-gutters">
+                <div class="legend">
+                    <div class="q-number selected"></div> <div class="legend-info"> Current selected Question.</div>
+                </div>
+                <div class="legend">
+                    <div class="q-number solved"></div><div class="legend-info"> Solved Question.</div>
+                </div>
+            </div>
+
+            <div class="row no-gutters">
+                <div class="card questions-list-card" >
+                    <h5 class="card-header">
+                        <a data-toggle="collapse" href="#questions-sheet-card" aria-expanded="true" aria-controls="collapse-example" id="heading-example" class="d-block">
+                            <i class="fa fa-chevron-down pull-right"></i>
+                            {{state.solved}} out of {{data.questions.length}} solved.
+                        </a>
+                    </h5>
+                    <div id="questions-sheet-card" class="collapse show hidden-sm-down" aria-labelledby="heading-example">
+                        <div class="card-body">
+                            <div class="q-numbers">
+                                    <div class="q-number" [class.selected] = "question.selected"  [class.solved] = "question.solved" *ngFor="let question of data.questions; let i=index;" (click)="saveAndOpenQuestion(i)">
+                                        {{i+1}}
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 question-block" *ngIf="data"> 
+            <app-question [state]="state" (saveAndNext)="saveAndOpenNextQuestion()" 
+                (openPrev)="openPrevQuestion()" (submit)="submitTest(undefined)" ></app-question>
+        </div>
+    </div>
+  </div>

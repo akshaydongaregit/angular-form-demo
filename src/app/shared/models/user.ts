@@ -1,0 +1,29 @@
+export class User {
+    userId:number;
+    username:string;
+    password:string;
+    adminUserNmae:string;
+    teplateName:string;
+    firstName:string;
+    lastName:string;
+    email:string;
+    phoneNo:string;
+    country:string;
+    state:string;
+    city:string;
+    address:string;
+    category:string;
+    education:string;
+    gender:string;
+    birthdate:string;
+    language:string;
+    fatherOccupation:string;
+    fatherEducation:string;
+    fatherMobile:string;
+    motherOccupation:string;
+    motherEducation:string;
+    motherMobile:string;
+    timeStamp:string;
+    adminId:string;
+    userType:string;
+}

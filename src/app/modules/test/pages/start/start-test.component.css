@@ -1,0 +1,125 @@
+.content-wrapper {
+    overflow-x: hidden;
+    background: #E3E5E6;
+  }
+ .container-fluid{
+    background: #F5F5F5;
+ }
+  @media (min-width: 992px) {
+    .content-wrapper {
+      margin-left: 250px;
+    }
+  }
+  @media (min-width: 992px) {
+    .sidenav-toggled.content-wrapper {
+      margin-left: 55px;
+    }
+  }
+  .content-wrapper {
+    min-height: calc(100vh - 56px);
+    padding-top: 1rem;
+  }
+ 
+ .login-page{
+    padding: 8% 3% 5% 3%;
+    /*background-color: #f6f6f6;
+    background-image: url('../../../../../assets/img/login_page.jpg') !important;*/
+ }
+ 
+ .login-page .container{
+    padding: 0% 0% 1% 0%;  
+    background-color: white;
+    border-radius: 20px;
+    /*overflow-x: auto;
+    box-shadow: 5px 5px 0 0 #C0C0C0;*/
+ }
+ 
+ 
+ .login-container .row {
+    /*border : 2px solid red;*/
+    padding: 4% 5% 2% 5%; 
+     /*background-color: white;*/
+ }
+ 
+ 
+ #form .instruction{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: black;
+    background-color : white;
+ }
+ 
+ .instruction i{
+     display: inline-block;
+    height: 100px;
+    width: 100px;
+     cursor: pointer;
+    background-color: lightseagreen;
+    border-radius: 50%;
+     font-size: 60px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 100px;
+ }
+ .instruction i:hover {
+    background-color: #ffbf00 ;	
+ }
+
+.start-test-container{
+    padding: 1em;
+    border: 1px solid #7f8c825e;
+    color: #646763;
+    border-radius: 4px;
+}
+.start-test-container .desc{
+    padding: 1em;
+    border-bottom: 1px solid #7f8c825e;
+}
+
+.attributes{
+    padding: 1em;
+    text-align: center;
+    
+}
+.attributes .attribute .attribute-value{
+    font-weight: bold;
+}
+
+.btn{
+    font-weight: bold;
+}
+.btn-green{
+    color: #fff;
+    background-color: lightseagreen;
+    border-color: lightseagreen;
+}
+.btn:hover{
+    background-color: #276897;
+}
+.actions{
+    padding: 1em;
+}
+
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.icon-timer::before{
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABoUlEQVRIid2VvUoDQRSFv2x0G5PSPqXRV4i9EVTiL7EMiTYx+Ai2oo0vIAQ1vkwwCorGKGisbAQJKNisxdxhh7izO0nphYHlnjPnzN69czeFWwSWfCppo+do8H8iwF6usarhA+tAC7g3DG6BU2BNhKeBNrA8ingJeDNEbevRMG+7vEkKODEEroA6kAemZOUl1zF4H/ImiaHFv4EK8a3oAVXhBsBBkvimEL+AJWDC5URAwTBZtJF84EVIFRE/BHKOJjXZ2xWtP7FNWHP9oXLAK1B2MPCAa9FYiSJcClgfypcl3wSyCSYN4Z5FgU8CzkRgTcF+UK1btBjMCu8uChwImInAsiKuW7JvMcgK/qkT5qWwjQBt/h6DD0dka3fFJG/ZVESVpw8sWDi6RA9RYEvAvRFOOhz7xHzkLQE7jDcZPeBGNDaiCD7wLITqGAY7sreH5aKBGr96DhVGEJ8nHBWlJPKxYVIjvlwesGuIH7mcJm2YBKjr3wDmUKM6I88Nwppr8bSLgY5Vwtsdt3o4lMUWPqojLlB/rYGse+Ac9TudjBP4BThWg2YuuVwEAAAAAElFTkSuQmCC);
+}
+.icon-question::before {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABmJLR0QA/wD/AP+gvaeTAAAB50lEQVRIib3WO2tUURAH8J82gpXGDYox4IoWPhpBEJIiRgzL+mgsFYzGR2dv5QfwlWAhqAT9BBYx6hcQK9HKxkehCMaIwjZipRZzbliT+9pF/cPlwtz/zP+cOXNmLv8Jq2pwBnEMh7EdG5P9M97gCR7iS7+LaGAGHczhLEawNT2jOJdEOpjGhl5FDmERd7C5Bn8Id8UuD9YVOZNEJnpdHVrJd7KKmO1kVx8iGXanGONFhIbqnTRxHhexv4TXwgIG8j7OiDMpwkn8wC/8TO9bJfxZXF9uHBSVU3Tw6/EdT7EJa3E7iRUd/pYUs9FtnBIlXIS9eC7KO8O2JHSpxG8ep2F1MhypEHqJfXjWZduZ3h9L/OZS7D8CjeRzc7EGr/BBpLEIo3jRbVgQFVUXN0VBtCt4zRS7L6GJJHKjBneFUC+peyCqqSxlGZZSlxXDO3Gj62Ad3otyr8KeFHsJU6IL/208tqzvZRd2qIbzZVypwRtOMVeMjmnR6qvwGt9q8O7jat6HhpgnrYoAx3GigtNW0lSJvrWofmHkIRsTB6qIk2L+V+0sD+3ke6quw7hI46zowlUYxj2RrrFeVzcg5klHdOEL4gI20zOabI8S55qSM6nzu9XAUfG7tUPMI/iEt0loHl973ck/wW/zaGQYx0tTrgAAAABJRU5ErkJggg==);
+}
+.icon-plus::before {
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABbUlEQVRIid2UTU7DMBCFP1I1G8oVOEDhDpQFLFGpUK9QUSF+LoEqzgArfg6D2FAQlAJbOEBY0AUNixkTq9hx3GWfNHLimXnPmcwYFh0p0AVugBHwpTYCrtWXzkveAd6BPGBvwG4McQKcWQT3wCHQBJbV1oAjYGjFDTQ3CEP+DfQCSQmwr7FGpBQdi3yjymkULUuk7QtKKWre88SYcrjQV98rUHcFdClq7itLmUANeFD/ntm0iUwnnANTD0kZfoALfXaW6UXVmyUkZV8A0l05Mif/kKmz4SAMmcGKvmdmo1LfRmBJ178S2wIfuq7OJNgW2je5ny6BO123Ik9tY1vXW5fTtOmQ+dv0kZk2tZEiF1eOjH+swIH6xngGDWQWzFXR8gU5sAlMkJ+7EwoeWCJ95NN9qCEnn2jOaZXTJJZIjoz/MTJEDbV14ISi5lMlj2r7NnJxhYZsTIWy+FBHOuIKeEYmNAOegEv1eX/oYuAXIGV8V8ESsxoAAAAASUVORK5CYII=);
+}
+
+
+@media (max-width: 767px) { 
+
+  .login-page{
+      padding: 17% 0px 0px 0px;   
+  }
+  
+}

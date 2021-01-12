@@ -1,0 +1,11 @@
+<div class="dropdown">
+<div class="auto-list">
+    <input autocomplete="off" [(ngModel)]="value" (input)="onTextChange($event)" class="form-control" (focus)="onFocus()" (focusout)="onFocusOut()"
+    [placeholder] = "placeholder ? placeholder : ''" >
+    <div class="auto-options" [class.block]="isFocused">
+        <option class="auto-option" *ngFor="let option of options" [value]="option" (click) = "onOptionClick($event)" [ngClass]="setClass(option)">
+            {{ option }}
+        </option>
+    </div>
+</div>
+</div>

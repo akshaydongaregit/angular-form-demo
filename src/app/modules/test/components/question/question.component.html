@@ -1,0 +1,71 @@
+<div class="row question-desc no-gutters" >
+    <div class="text" [class.col-md-6]="state.question.questionImage">  <b>{{state.question.templateQuestionNo}}. </b>{{state.question.question}} </div>
+    <img class="col-md-5" [src]="state.question.questionImage" *ngIf="state.question.questionImage" />
+</div>
+<div class="row no-gutters">
+    <div class="container question-options-container">
+        <div class="row  question-options-row">
+        <div class="col-md-6 question-option">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer-option" value="A" 
+                [(ngModel)]="state.question.answer" >
+                <label class="form-check-label" for="answer-option">
+                <b>A. </b>{{state.question.optionA}}
+                </label>
+                <img class="col-10" src="/assets/img/1.jpg" *ngIf="state.question.optionImageA" />
+            </div>
+        </div>
+        <div class="col-md-6 question-option">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer-option" value="B"
+                [(ngModel)]="state.question.answer" >
+                <label class="form-check-label" for="answer-option">
+                <b>B. </b>{{state.question.optionB}}
+                </label>
+                <img class="col-10" src="/assets/img/1.jpg" *ngIf="state.question.optionImageB" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 question-option">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer-option" value="C"
+                [(ngModel)]="state.question.answer" >
+                <label class="form-check-label" for="answer-option">
+                <b>C. </b>{{state.question.optionC}}
+                </label>
+                <img class="col-10" src="/assets/img/1.jpg" *ngIf="state.question.optionImageC" />
+            </div>
+        </div>
+        <div class="col-md-6 question-option">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer-option" value="D"
+                [(ngModel)]="state.question.answer" >
+                <label class="form-check-label" for="answer-option">
+                <b>D. </b>{{state.question.optionD}}
+                </label>
+                <img class="col-10" src="/assets/img/1.jpg" *ngIf="state.question.optionImageD" />
+            </div>
+        </div>
+        <div class="col-md-6 question-option">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="answer-option" value="E"
+                [(ngModel)]="state.question.answer" >
+                <label class="form-check-label" for="answer-option">
+                <b>E. </b>{{state.question.optionE}}
+                </label>
+                <img class="col-10" src="/assets/img/1.jpg" *ngIf="state.question.optionImageE" />
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div class="row no-gutters options">
+    <div class="container">
+        <button type="button" id="submit-test-btn" class="col-3 btn btn-success" disabled (click)="submitTest()" >Submit</button>
+        <button type="button" [disabled]="state.questionIndex==0" class="col-3 btn btn-warning" (click) = "openPrevQuestion()">Previous</button>
+        <button type="button" class="col-4 btn btn-info" (click) = "saveAndOpenNextQuestion()" >
+            {{state.questionIndex < (state.questionsCount-1) ? 'Save & Next' : 'Save'}}
+        </button>
+    </div>
+</div>

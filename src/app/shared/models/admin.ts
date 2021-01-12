@@ -1,0 +1,23 @@
+export class Admin {
+    adminId:number;
+	userName:string;
+	password:string;
+	firstName:string;
+    lastName:string;
+	emailId:string;
+	phoneNumber:string;
+	country:string;
+	state:string;
+	city:string;
+	address:string;
+	occupation:string;
+	gender:string;
+	birthDate:string;
+	noOfLicen:string[];
+	licenseUsed:string[];
+	totalStudents:number;
+	templateName:string[];
+	licenseState:string[];
+	timeStamp:string;
+	userType:string;
+}

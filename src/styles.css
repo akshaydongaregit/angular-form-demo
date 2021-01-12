@@ -1,0 +1,180 @@
+/* -----------------------------
+Header CSS
+-------------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+} 
+
+
+
+/* You can add global styles to this file, and also import other style files */
+/* Register and login Form CSS file*/
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Bold.ttf");
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Light.ttf");
+    font-weight: light;
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-LightItalic.ttf");
+    font-weight: light;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Italic.ttf");
+    font-style: italic;
+  }
+
+
+  @font-face {
+    font-family: "Pattaya";
+    src: url("./assets/fonts/Pattaya-Regular.ttf");
+    font-weight: bold;
+  }
+
+* {
+    font-family: 'Ubuntu' , Verdana, sans-serif;
+  }
+
+  button + button {
+    margin-left:1%;
+  }
+
+
+  .dropdown-group .auto-list{
+    margin-top: 0px !important;
+} 
+
+
+.form-part{
+  padding: 1rem 2rem;
+  background: #fffefd;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border:1px solid #e5eff7;
+  border-left:0px solid;
+  border:1px solid #e5eff7;
+}
+
+.form-part .title {
+  font-size: larger;
+  text-align: center;
+  color: #0dcaf5;
+  font-weight: bold;
+  margin:.5rem;
+}
+
+.btn
+{
+    /*width: 99%; */
+    border-radius: 4px;
+    padding: 2% 5% 2% 5%;
+    cursor: pointer;
+    background:#0dcaf5;
+    color:#f4faff;
+    border:1px solid #0dcaf5;
+    font-weight:bold;
+}
+
+.btn.success{
+    background:#7de208;
+    color:#f4faff;
+    border:1px solid #7de208;
+}
+
+.form .link{
+    color: #676c72;
+    font-weight:200;
+    text-decoration: none;
+    font-weight:normal;
+    font-style: italic;
+}
+
+.form-group .form-control + .form-control{
+    margin-top:5px ;  
+}
+.form-control[type="date"]{
+    display: inline !important;
+    width: 60%;
+    margin-left: 1rem;
+}
+
+.form-error{
+    font-size:small !important;
+    color:#f54811;
+    width:99%;
+    height:fit-content;
+    padding:5px;
+    margin-left:5px;
+    background-color: #fbe2c3;
+    border-bottom-right-radius:3px;
+    border-bottom-left-radius:3px;
+}
+.form-card{
+  border:1px solid rgb(206,212,218);
+  padding: .5rem;
+  border-radius: 4px;
+  margin: .3rem;
+  background-color: rgb(255, 253, 247);
+}
+
+.form-card .form-group:last-of-type {
+  margin-bottom: .1rem;
+}
+
+/*.form-part .dropdown-group{
+    max-height: 600px;
+    overflow-y: auto;
+}*/
+
+.bl-grey{
+ background-color: #676c7210;
+}
+.bl-white{
+  background-color: #fafbfd2c;
+ } 
+ .bl-red{
+  background-color: #f3081c15;
+ }
+ .bl-orange{
+  background-color: #f7712418;
+ }
+ .bl-green{
+  background-color: #35f84f1e;
+ }
+ .bl-yellow{
+  background-color: #ffea292f;
+ }
+ .bl-blue{
+  background-color: #295bff18;
+ }
+
+ input[type=radio]{
+  transform:scale(1.5);
+}   
